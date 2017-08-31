@@ -1,0 +1,13 @@
+django==1.10.7
+
+# for images
+Pillow==4.1.1 
+
+# Python-postgresql db adapter
+psycopg2==2.7.1
+
+# django-admin library
+django-suit==0.2.25
+
+# for easy file upload
+django-filer==1.2.7
