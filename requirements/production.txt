@@ -15,5 +15,8 @@ psycopg2
 # for easy file upload
 django-filer
 
+# easy_thumbnail version with no error
+easy-thumbnails==2.4.1
+
 # managing environ and setting base, project dir
 django-environ
