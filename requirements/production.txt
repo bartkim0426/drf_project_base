@@ -1,13 +1,19 @@
-django==1.10.7
+django
 
 # for images
-Pillow==4.1.1 
+Pillow
 
 # Python-postgresql db adapter
-psycopg2==2.7.1
+psycopg2
 
 # django-admin library
-django-suit==0.2.25
+# django-suit==0.2.25
+
+# django suit v2
+-e git://github.com/darklow/django-suit.git@v2#egg=django-suit
 
 # for easy file upload
-django-filer==1.2.7
+django-filer
+
+# managing environ and setting base, project dir
+django-environ

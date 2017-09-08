@@ -1,9 +1,10 @@
 import os
 
-from .BASE import PROJECT_ROOT, BASE_DIR
+from .BASE import ROOT_DIR, CONFIG_DIR
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+# STATIC_ROOT = os.path.join(ROOT_DIR, 'staticfiles')
+STATIC_ROOT = str(ROOT_DIR('staticfiles'))
 STATIC_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    CONFIG_DIR.path('static'),
 )

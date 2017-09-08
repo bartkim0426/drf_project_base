@@ -1,7 +1,10 @@
 import os
+import environ
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PROJECT_ROOT = os.path.dirname(BASE_DIR)
+ROOT_DIR = environ.Path(__file__) - 4  # (project_name/config/settings/base.py - 3 = project_name/)
+CONFIG_DIR = ROOT_DIR.path('config')
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
 SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 

@@ -2,16 +2,10 @@
 
 프로젝트 생성을 쉽게 해주기 위한 directory
 
-
 사용시 git clone 후`projectname`만 해당 프로젝트명으로 변경해서 사용
+- `env.example` 파일을 `.env`로 변환 후 `projectname` 변경
+- `.env` 파일에 필요한 정보(postgres 등) 넣기 
 
-- directory명 변경
-- settings/partials/base.py 변경
-```
-ROOT_URLCONF = 'projectname.urls'
-WSGI_APPLICATION = 'projectname.wsgi.application'
-```
-- env.example에 내용을 넣고 .env 파일로변경
 ```
 # pyenv, autoenv 사용시 자동 activate
 pyenv activate projectname
@@ -42,4 +36,3 @@ DJANGO_ALLOWED_HOSTS=['*']
 
 
 - database settings: 현재는 local db가 sqlite. 맞는 psql 세팅으로 변경한 후 진행 가능
-> `settings/local.py`, `settings/production.py`에 각각 databse 선언
