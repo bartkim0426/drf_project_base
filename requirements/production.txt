@@ -1,5 +1,10 @@
 django
 
+# drf
+djangorestframework
+markdown
+django-filter
+
 # for images
 Pillow
 
